@@ -11,7 +11,7 @@ public class Main {
   public static void main(String[] args) {
     try {
       Path path = Path.of("src/main/resources/Assignment8.txt");
-      Files.writeString(path, "新カリキュラムの課題８");
+      Files.writeString(path, "を提出します", StandardOpenOption.APPEND);
       System.out.println(Files.readString(path));
     } catch (IOException e) {
       e.printStackTrace();
